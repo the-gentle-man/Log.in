@@ -6,4 +6,4 @@ Eu realmente espero que vocês gostem e apreciem pois esse é só o começo de u
 
 Nunca desistam dos seus sonhos e façam aquilo que vocês amam
 
-A vida é maravilhosa, apesar de tudo!
+A vida é maravilhosa, apesar de tudo
