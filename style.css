@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    83.2deg,
+    rgba(99, 88, 238, 1) 10.8%,
+    rgba(150, 93, 233, 1) 94.3%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-area {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 3rem;
+}
+
+.left-area > h1 {
+  color: #88ff00;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+.image {
+  width: 30vw;
+}
+
+.right-area {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border-radius: 20pt;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 32px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+  border: 3px solid #88ff00;
+}
+
+.card > h1 {
+  color: #88ff00;
+  font-weight: 800;
+}
+
+.textfield {
+  width: 80%;
+}
+
+.textfield label {
+  border-radius: 1rem;
+  pointer-events: none;
+  position: relative;
+  top: -3.45rem;
+  left: 0.8rem;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  background-color: transparent;
+  width: min-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fffffffa;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  background: #ffffff54;
+  color: #ffffff;
+  font-size: 15pt;
+  box-shadow: 0pt 10pt 40pt #00000056;
+  box-sizing: border-box;
+  margin-bottom: 15pt;
+}
+
+.textfield input:focus {
+  border: 2px solid #88ff00;
+  outline: none;
+}
+
+.textfield input::placeholder {
+  color: transparent;
+}
+
+.textfield input:focus + label,
+.textfield input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  top: -5.8rem;
+  left: 0px;
+  color: #88ff00;
+  background: transparent;
+}
+
+.btn-login {
+  width: 80%;
+  padding: 20px 0px;
+  border-radius: 0.8rem;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+  background-color: #273339a4;
+  border: none;
+  cursor: pointer;
+  box-shadow: 10pt 10pt 20pt #00000056;
+  transition: transform 200ms, box-shadow 200ms;
+}
+
+.btn-login:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: #00000056 0pt 0pt 0pt;
+}
+
+.btn-login:hover {
+  background-color: #88ff00;
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .left-area > h1 {
+    display: none;
+  }
+
+  .left-area {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-area {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    width: 65vw;
+    margin-bottom: 5vh;
+  }
+}
